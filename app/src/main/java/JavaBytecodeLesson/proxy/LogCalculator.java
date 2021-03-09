@@ -1,5 +1,6 @@
-package JavaBytecodeLesson;
+package JavaBytecodeLesson.proxy;
 
+import JavaBytecodeLesson.models.ICalc;
 import JavaBytecodeLesson.annotations.Log;
 
 import java.lang.reflect.InvocationHandler;

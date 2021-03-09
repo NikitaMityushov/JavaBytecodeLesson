@@ -1,4 +1,4 @@
-package JavaBytecodeLesson;
+package JavaBytecodeLesson.models;
 
 import JavaBytecodeLesson.annotations.Log;
 

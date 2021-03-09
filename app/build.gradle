@@ -15,11 +15,25 @@ dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
 
-    // https://mvnrepository.com/artifact/org.ow2.asm/asm
-    implementation group: 'org.ow2.asm', name: 'asm', version: '9.1'
-}
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm-commons
+    implementation group: 'org.ow2.asm', name: 'asm', version: '7.0'
 
+}
+/*
 application {
     // Define the main class for the application.
     mainClass = 'JavaBytecodeLesson.App'
 }
+
+ */
+
+jar {
+    archiveName = "app.jar"
+    manifest {
+        attributes (
+                'Main-Class': 'JavaBytecodeLesson.App',
+                'Premain-Class': 'JavaBytecodeLesson.asm.CalculatorAgent'
+        )
+    }
+}
+

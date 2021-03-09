@@ -1,20 +1,18 @@
-package JavaBytecodeLesson;
+package JavaBytecodeLesson.models;
 
-public class Calculator implements ICalc {
+import JavaBytecodeLesson.annotations.Log;
 
-    @Override
+public class CalculatorForAgent {
     public void add(int a, int b) {
         System.out.println(a + b);
     }
 
-    @Override
     public void sub(int a, int b) {
         System.out.println(a - b);
     }
 
-    @Override
+    @Log
     public void mult(int a, int b) {
         System.out.println(a * b);
     }
-
 }
